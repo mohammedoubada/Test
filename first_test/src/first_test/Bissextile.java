@@ -9,12 +9,15 @@ public class Bissextile {
 		Scanner sc =new Scanner(System.in);
 	  
 	
-	System.out.println("Entrer une année :");
+	System.out.println("Entrer une annÃ©e :");
 	int a;
 	a=sc.nextInt();
 	
-	System.out.println( ((a % 4 ==0 && a % 100 == 1  ) || a % 400 == 0)? a+" est bissextile ":  a+" n'est pas bissextile ");
- 	 
+	//System.out.println( ((a % 4 ==0 && a % 100 == 1  ) || a % 400 == 0)? a+" est bissextile ":  a+" n'est pas bissextile ");
+ 	if(a % 4 ==0 && a % 100 == 1) 
+		System.out.println(" bissextile ");
+	else if(a%400)
+		System.out.println(" n'est pas bissextile ");
  	
 	}
 }
